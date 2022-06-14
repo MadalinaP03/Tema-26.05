@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html style="background-color:beige;">
+<body>
+<h1 style="text-align: center;">Top Music</h1>
+<div class="liste" style="column-count: 3; padding: 50px 50px;">
+<h2>1.JavaScript For Loop</h2>
+<p id="demo"></p>
+<script>
+  //for
+  const songs = ["Dua Lipa-Sweetest Pie", "Charli XCX-Beg For You ", "INNA-Champagne Problems", "Irina Rimes-IELELE ", "Cristian Porcari - Buze Parfumate", "Carla's Dreams-Adidasii"];
+  let text = "";
+  for (let i = 0; i < songs.length; i++) {
+  text += songs[i] + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+</script>
+<h2>2.JavaScript For In</h2>
+<p id="demo1"></p>
+<script>
+  //for-in
+  const songs1 = ["Dua Lipa-Sweetest Pie", "Charli XCX-Beg For You ", "INNA-Champagne Problems", "Irina Rimes-IELELE ", "Cristian Porcari - Buze Parfumate", "Carla's Dreams-Adidasii"];
+  let text1 = "";
+  for (let x in songs1) {
+  text1 += songs1[x] + "<br>";
+  }
+  document.getElementById("demo1").innerHTML = text1;
+</script>
+<h2>3.JavaScript For Of</h2>
+<p id="demo2"></p>
+<script>
+  //for-of
+  const songs2 = ["Dua Lipa-Sweetest Pie", "Charli XCX-Beg For You ", "INNA-Champagne Problems", "Irina Rimes-IELELE ", "Cristian Porcari - Buze Parfumate", "Carla's Dreams-Adidasii"];
+  let text2 = "";
+  for (let x of songs2) {
+  text2 += x + "<br>";
+  }
+  document.getElementById("demo2").innerHTML = text2;
+</script>
+<h2>4.JavaScript For Each</h2>
+<p id="demo3"></p>
+<script>
+  //for-each
+  const songs3 = ["Dua Lipa-Sweetest Pie", "Charli XCX-Beg For You ", "INNA-Champagne Problems", "Irina Rimes-IELELE ", "Cristian Porcari - Buze Parfumate", "Carla's Dreams-Adidasii"];
+  let text3 = "";
+  songs3.forEach(myFunc);
+  document.getElementById("demo3").innerHTML = text3;
+  //function
+  function myFunc(songs3) {
+    text3 += songs3 + "<br>";
+  }
+</script>
+<h2>5.JavaScript While</h2>
+<p id="demo4"></p>
+<script>
+  //while
+  const songs4 = ["Dua Lipa-Sweetest Pie", "Charli XCX-Beg For You ", "INNA-Champagne Problems", "Irina Rimes-IELELE ", "Cristian Porcari - Buze Parfumate", "Carla's Dreams-Adidasii"];
+  let text4 = "";
+  let i = 0;
+  while (songs4[i]) {
+  text4 += songs4[i] + "<br>";
+  i++;
+  }
+  document.getElementById("demo4").innerHTML = text4;
+</script>
+<h2>6.JavaScript Do-While</h2>
+<p id="demo5"></p>
+<script>
+  //while
+  const songs5 = ["Dua Lipa-Sweetest Pie", "Charli XCX-Beg For You ", "INNA-Champagne Problems", "Irina Rimes-IELELE ", "Cristian Porcari - Buze Parfumate", "Carla's Dreams-Adidasii"];
+  let text5= "";
+  let ii = 0;
+  do {
+  text5 += songs5[ii] + "<br>";
+  ii++;
+  } while (songs5[ii])
+  document.getElementById("demo5").innerHTML = text5;
+</script>
+</div>
+</body>
+</html>
